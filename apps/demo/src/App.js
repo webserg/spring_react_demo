@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import Counter from './Counter'
+import ShowUsers from './ShowUsers'
 
 class App extends Component {
   render() {
@@ -9,8 +11,10 @@ class App extends Component {
           <h1 className="App-title">Demo React.js on Spring</h1>
         </header>
         <p className="App-intro">
-          This project is a demo example for the article <a href="">Spring and React.js: the easy way</a>          
+          This project is a demo example for <a href="">Spring and React.js: the easy way</a>
         </p>
+          <Counter/>
+          <ShowUsers/>
       </div>
     );
   }

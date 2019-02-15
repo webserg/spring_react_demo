@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
-    "react-scripts": "1.0.17"
+    "axios": "^0.18.0",
+    "pubsub-js": "^1.7.0",
+    "react-scripts": "1.0.17",
+    "react-test-renderer": "^16.8.2"
   },
   "proxy": "http://localhost:8080",
   "homepage": "/demo/build",
@@ -13,7 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && rm -rf ../../src/main/webapp/demo/build/ && mv build/ ../../src/main/webapp/demo/",
+    "build": "react-scripts build && rm -rf ../../src/main/webapp/demo/build/ && cp -r build ../../src/main/webapp/demo/build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
